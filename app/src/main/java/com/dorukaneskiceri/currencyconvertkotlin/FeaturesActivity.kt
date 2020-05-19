@@ -26,7 +26,7 @@ class FeaturesActivity : AppCompatActivity() {
 
     inner class MyCustomAdapter(context: Context): BaseAdapter(){
 
-        private val names = arrayListOf<String>("Google Maps", "Battery Consumption", "Motion Sensor")
+        private val names = arrayListOf<String>("Google Maps", "Şarj Olma Durumu", "Motion Sensor")
         private val myContext = context
 
         init {
@@ -47,7 +47,8 @@ class FeaturesActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 if(position == 1){
-                    Toast.makeText(myContext,"Selamke",Toast.LENGTH_LONG).show()
+                    val intent = Intent(myContext,BatteryActivity::class.java)
+                    startActivity(intent)
                 }
                 if(position == 2){
                     Toast.makeText(myContext,"Selamkem",Toast.LENGTH_LONG).show()
