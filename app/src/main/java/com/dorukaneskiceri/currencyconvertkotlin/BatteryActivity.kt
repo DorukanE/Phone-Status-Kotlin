@@ -1,6 +1,5 @@
 package com.dorukaneskiceri.currencyconvertkotlin
 
-import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
@@ -9,8 +8,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_battery.*
 
 class BatteryActivity : AppCompatActivity() {
-
-    private lateinit var batteryManager: BatteryManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
