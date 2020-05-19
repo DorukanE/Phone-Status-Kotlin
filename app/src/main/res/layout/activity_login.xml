@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toTopOf="@+id/passwordText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/loginButton"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordText" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView5"
         android:layout_width="162dp"
         android:layout_height="124dp"
         android:layout_marginTop="39dp"
