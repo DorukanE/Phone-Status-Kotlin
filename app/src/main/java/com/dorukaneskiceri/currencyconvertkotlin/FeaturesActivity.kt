@@ -26,7 +26,7 @@ class FeaturesActivity : AppCompatActivity() {
 
     inner class MyCustomAdapter(context: Context): BaseAdapter(){
 
-        private val names = arrayListOf<String>("Google Maps", "Şarj Olma Durumu", "Fotoğraf Çekme ve Yükleme")
+        private val names = arrayListOf<String>("Google Maps", "Şarj Olma Durumu", "Fotoğraf Çekme ve Yükleme", "Galeriden Fotoğraf Seçme")
         private val myContext = context
 
         init {
@@ -52,6 +52,10 @@ class FeaturesActivity : AppCompatActivity() {
                 }
                 if(position == 2){
                     val intent = Intent(myContext,CameraActivity::class.java)
+                    startActivity(intent)
+                }
+                if(position == 3){
+                    val intent = Intent(myContext,GalleryActivity::class.java)
                     startActivity(intent)
                 }
             }
