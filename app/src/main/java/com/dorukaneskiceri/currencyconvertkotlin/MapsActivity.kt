@@ -138,6 +138,4 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 //            e.printStackTrace()
 //        }
 //    }
-
-
 }
