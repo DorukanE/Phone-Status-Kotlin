@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_shape"
+    tools:context=".SensorActivity">
+
+    <Button
+        android:id="@+id/showSensors"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/button_shape"
+        android:onClick="showSensor"
+        android:text="Sensörleri Göster"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kotlin" />
+
+    <TextView
+        android:id="@+id/xText"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="17dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/yText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/yText"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/zText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/zText"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="96dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showSensors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
