@@ -13,7 +13,7 @@
         android:layout_height="64dp"
         android:layout_marginBottom="92dp"
         android:background="@drawable/button_shape"
-        android:text="Fotoğraf Çek"
+        android:text="Take Photo"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"

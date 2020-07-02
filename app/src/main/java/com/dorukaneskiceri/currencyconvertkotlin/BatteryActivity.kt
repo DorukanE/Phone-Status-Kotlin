@@ -27,15 +27,15 @@ class BatteryActivity : AppCompatActivity() {
 
         if(isCharging){
             if(usbCharge){
-                statusText.text = "Cihaz USB ile şarj oluyor."
+                statusText.text = "The device charging with usb."
             }else if(acCharge){
-                statusText.text = "Cihaz prize takılı ve şarj oluyor."
+                statusText.text = "The device plugged in and charging"
             }else{
-                statusText.text = "Şarj olma durumunu alırken bir hata oluştu."
+                statusText.text = "There is an error occurred on taking charge status."
             }
         }
         else{
-            statusText.text = "Cihaz şarj olmuyor."
+            statusText.text = "The device is not charging."
         }
     }
 }

@@ -33,14 +33,14 @@ class LoginActivity : AppCompatActivity() {
                 Response.Listener {
                         response ->
                     if(response["success"].toString() == "true"){
-                        Toast.makeText(this@LoginActivity,"Giriş başarılı.",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@LoginActivity,"Login Successful.",Toast.LENGTH_LONG).show()
                         val intent = Intent(this,FeaturesActivity::class.java)
                         startActivity(intent)
                         finish()
                     }
 
                 },Response.ErrorListener {
-                    Toast.makeText(this@LoginActivity,"Kullanıcı adı veya şifre hatalı.",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@LoginActivity,"Username or password incorrect.",Toast.LENGTH_LONG).show()
                 })
             queue.add(request)
 

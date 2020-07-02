@@ -14,7 +14,7 @@
         android:layout_marginBottom="140dp"
         android:background="@drawable/button_shape"
         android:onClick="showSensor"
-        android:text="Sensörleri Göster"
+        android:text="Show Sensors"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"

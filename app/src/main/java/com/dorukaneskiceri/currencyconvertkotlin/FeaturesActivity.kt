@@ -24,8 +24,8 @@ class FeaturesActivity : AppCompatActivity() {
 
     inner class MyCustomAdapter(context: Context): BaseAdapter(){
 
-        private val names = arrayListOf<String>("Google Maps", "Şarj Olma Durumu", "Fotoğraf Çekme ve Yükleme", "Galeriden Fotoğraf Seçme",
-            "Hareket Sensörü")
+        private val names = arrayListOf<String>("Google Maps", "Battery Status", "Taking and Uploading Photos", "Choosing Photo From The Gallery",
+            "Motion Sensor(Accelerometer)")
         private val myContext = context
 
         init {

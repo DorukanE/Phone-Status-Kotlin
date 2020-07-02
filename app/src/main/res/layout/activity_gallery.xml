@@ -14,7 +14,7 @@
         android:layout_marginBottom="92dp"
         android:background="@drawable/button_shape"
         android:onClick="openGallery"
-        android:text="Fotoğraf Seç"
+        android:text="Choose Photo"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
